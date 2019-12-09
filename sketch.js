@@ -1,6 +1,8 @@
 function setup() {
-  createCanvas(400, 400);
-  y = height;
+  createCanvas(1200, 1200);
+  String[] lines = loadStrings(“aquarius.txt”);
+  txt = join(line, “\n”);
+  Y = height;
 }
 
 function draw() {
@@ -9,7 +11,7 @@ function draw() {
   fill(255);
   textSize(32);
   textAlign(CENTER);
-  text('txt', 0, y, width, height*10);
+  text(txt, 0, y, width, height*10);
 
   y--;
 }
