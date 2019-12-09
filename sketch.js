@@ -1,10 +1,11 @@
+String txt;
 var drops = [];
 
 function setup() {
   createCanvas(1200, 1200);
   String[] lines = loadStrings(“aquarius.txt”);
   txt = join(line, “\n”);
-  Y = height;
+  y = height;
   for (var i = 0; i < 500; i++) {
    drops[i] = new Drop();
    }
