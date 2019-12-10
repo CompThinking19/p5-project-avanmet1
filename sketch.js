@@ -1,12 +1,12 @@
 var txt;
-var drops = [];
 var lines;
+
 function preload(){
   lines = loadStrings('edcomplete.txt');
 }
 
 function setup() {
-  createCanvas(1200, 1200);
+  createCanvas(1200, 800);
 
   txt = join(lines, '\n');
   y = height;
@@ -18,6 +18,6 @@ function draw() {
   fill(255);
   textSize(32);
   textAlign(CENTER);
-  text(txt, 0, y, width, height*10);
-  y--;
+  text(txt, 0, y, width, height);
+  y-=3;
 }
