@@ -1,22 +1,20 @@
-var txt;
-var lines;
+
 var poem
 
 function preload(){
-  lines = loadStrings('edcomplete.txt');
+  dickinson = loadStrings('edcomplete.txt');
+  poe = loadStrings('poecomplete.txt');
 }
 
 function setup() {
   createCanvas(1200, 800);
 
-  txt = join(lines, '\n');
   y = height;
 }
 
 function draw() {
   if (mouseIsPressed) {
-  var poem = random(lines) + '\n' + random(lines)
-  random(lines);
+  var poem = random(poe) + '\n' + random(dickinson) + '\n' + random(poe) + '\n' +random(dickinson)
   background(0);
   fill(255);
   textSize(32);
