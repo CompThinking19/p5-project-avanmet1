@@ -1,9 +1,12 @@
-String txt;
+var txt;
 var drops = [];
-
+var lines
+function preload(){
+  lines = loadStrings(“edcomplete.txt”);  
+}
 function setup() {
   createCanvas(1200, 1200);
-  String[] lines = loadStrings(“edcomplete.txt”);
+
   txt = join(lines, “\n”);
   y = height;
   for (var i = 0; i < 500; i++) {
