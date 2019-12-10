@@ -1,5 +1,7 @@
+
 var txt;
 var lines;
+var poem
 
 function preload(){
   lines = loadStrings('edcomplete.txt');
@@ -8,7 +10,6 @@ function preload(){
 function setup() {
   createCanvas(1200, 800);
 
-  txt = join(lines, '\n');
   y = height;
 }
 
@@ -18,6 +19,8 @@ function draw() {
   fill(255);
   textSize(32);
   textAlign(CENTER);
-  text(txt, 0, y, width, height);
-  y-=3;
+  text(poem, 0, y, width, height*100);
+  y-=10;
+  //define poem within mouseclick function txt = join(lines, '\n'); 
+
 }
